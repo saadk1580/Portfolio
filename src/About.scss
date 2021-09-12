@@ -1,0 +1,37 @@
+.about-container {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.about-description {
+  font-size: 1.5rem;
+  width: 50vw;
+  margin: 130px 0 0 50px;
+  max-width: 600px;
+}
+
+.stock-pics {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+}
+
+.stock-div {
+  display: flex;
+  width: 800px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.js,
+.html,
+.css {
+  padding: 25px;
+}
+
+.cpp {
+  padding: 20px;
+}
