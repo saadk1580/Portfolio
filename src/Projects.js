@@ -12,7 +12,6 @@ export default class Projects extends Component {
             projectImg="Project-youtube"
             title="Hackerrank"
             source={Hackerrank}
-            discription="Technology Used: JavaScript "
           />
         </div>
         <div className="bg-color">
@@ -23,7 +22,6 @@ export default class Projects extends Component {
             projectImg="Project-hacker"
             title="Xplorer"
             source={YoutubePro}
-            discription=""
           />
         </div>
         <div className="Pro-3 Pro">
@@ -31,7 +29,6 @@ export default class Projects extends Component {
             projectImg="Project-xplorer"
             title="YouTube Lite"
             source={YoutubePro}
-            discription=""
           />
         </div>
       </div>
@@ -43,7 +40,6 @@ function ProjectsShow(props) {
   return (
     <div className={props.projectImg + " Project"}>
       <div className="fade">
-        {/* <img src={props.source} alt={props.title} /> */}
         <p className="git">EXPLORE</p>
       </div>
     </div>

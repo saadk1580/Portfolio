@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.scss";
 import Projects from "./Projects";
-import hi from "./Images/hi.jpeg";
 import About from "./About";
 
 function App() {
@@ -18,11 +17,13 @@ function App() {
   ];
   useEffect(() => {
     const interval = setInterval(() => {
-      setSeconds((seconds) => (seconds < 6 ? seconds + 1 : seconds - 6));
+      setSeconds((seconds) =>
+        seconds < words.length - 1 ? seconds + 1 : seconds - (words.length - 1)
+      );
     }, 2200);
     document.getElementsByClassName("mm").innerHTML = words[seconds];
     return () => clearInterval(interval);
-  }, []);
+  });
 
   return (
     <div className="App">

@@ -6,6 +6,7 @@ import Rjs from "./Images/react.png";
 import Cpp from "./Images/cpp.png";
 import HTML from "./Images/html.png";
 import CSS from "./Images/css.png";
+import AWS from "./Images/aws_logo.png";
 
 function About() {
   return (
@@ -25,6 +26,7 @@ function About() {
         <img src={Cpp} className="stock-pics cpp" alt="Cpp logo" />
         <img src={HTML} className="stock-pics html" alt="HTML logo" />
         <img src={CSS} className="stock-pics css" alt="CSS logo" />
+        <img src={AWS} className="aws" alt="AWS logo" />
       </div>
     </div>
   );
