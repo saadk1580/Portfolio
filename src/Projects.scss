@@ -9,7 +9,6 @@
 .Project {
   width: 500px;
   height: 750px;
-
   &s-container {
     display: flex;
     max-width: 2000px;
@@ -27,16 +26,20 @@
     background-position: center;
     z-index: 2;
     position: relative;
+    background-size: cover;
   }
   &-youtube {
     background: url("./Images/youtube.png");
     position: relative;
     z-index: 2;
+    background-position: 0%;
+    background-size: cover;
   }
   &-xplorer {
     background: url("./Images/xplore.png");
     border: #000000 2px solid;
     position: relative;
+    background-size: cover;
   }
 }
 
@@ -57,7 +60,13 @@
 }
 
 .fade {
-  background: rgba(22, 22, 22, 0.029);
+  background: rgb(3, 1, 1);
+  background: linear-gradient(
+    180deg,
+    rgba(3, 1, 1, 1) 12%,
+    rgba(3, 1, 1, 0.64150272326523) 69%,
+    rgba(0, 0, 0, 0.35498586933264575) 91%
+  );
   width: 500px;
   height: 750px;
   display: flex;
@@ -81,21 +90,39 @@
   }
 }
 
-.git {
-  width: 200px;
-  margin: 0 auto;
-  font-size: 3rem;
-  animation: effect;
-  animation-duration: 1.5s;
-  color: #123c69;
-}
-
 .demo {
   width: 100px;
 }
 
 .Pro {
   margin: 20px;
+}
+
+.pro {
+  &-btns {
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    width: 200px;
+    margin: 0 auto;
+    // font-size: 3rem;
+    padding: 0;
+    animation: effect;
+    animation-duration: 1.5s;
+  }
+  &-name {
+    font-size: 2.5rem;
+    color: #ffffff;
+  }
+}
+
+.git,
+.live {
+  color: #000000;
+  text-decoration: none;
+  background-color: #ffffff;
+  border-radius: 5px;
 }
 
 @keyframes effect {
@@ -122,7 +149,29 @@
 }
 
 @media (max-width: 1625px) {
+  .Project,
+  .fade {
+    width: 430px;
+    height: 650px;
+  }
+}
+
+@media (max-width: 500px) {
   .bg-color {
     height: 100vh;
+  }
+  .Project,
+  .fade {
+    width: 320px;
+    height: 520px;
+  }
+
+  .pro {
+    &-btns {
+      font-size: 1rem;
+    }
+    &-name {
+      font-size: 1.6rem;
+    }
   }
 }

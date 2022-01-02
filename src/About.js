@@ -12,12 +12,11 @@ function About() {
   return (
     <div className="about-container">
       <p className="about-description">
-        Tech enthausiat person and currently works as a IT analyst. I have a
-        diverse software engineering bacground and primarly work with JavaScript
-        and React library to create dynamic and responsive web applications.
-        Strong understaning of software engineer methadologies and algorithms to
-        solve complex problems. <br />{" "}
-        <b>Here are some of the technologies I have experince working with:</b>
+        IT analyst and passionate software engineer. Always looking foreward to
+        working with different technologies to create dynamic and responsive
+        application. Strong understaning of software engineer methadologies and
+        algorithms to solve complex problems. <br />{" "}
+        <b>Here are some of the technologies I mostly work with:</b>
       </p>
       <div className="stock-div">
         <img src={Java} className="stock-pics java " alt="Java logo" />

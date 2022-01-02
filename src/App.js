@@ -2,18 +2,19 @@ import React, { useState, useEffect } from "react";
 import "./App.scss";
 import Projects from "./Projects";
 import About from "./About";
+import ScrollIntoView from "react-scroll-into-view";
+import Contact from "./Contact";
 
 function App() {
   const [seconds, setSeconds] = useState(0);
 
   let words = [
     "Software Engineer",
-    "Googler",
     "IT Analyst",
-    "Stackoverflow",
     "Front End Developer",
+    "Googler",
     "ReactJS",
-    "NodeJS",
+    "HTML/CSS",
   ];
   useEffect(() => {
     const interval = setInterval(() => {
@@ -35,8 +36,15 @@ function App() {
           </h1>
 
           <ul className="Nav">
-            <li className="Projects-btn">Projects</li>
-            <li className="Contact-btn">Contact</li>
+            <li className="Contact-btn">
+              {" "}
+              <ScrollIntoView selector=".pp">Projects</ScrollIntoView>
+            </li>
+            <li className="Projects-btn">
+              <ScrollIntoView selector=".contact-container">
+                Contact
+              </ScrollIntoView>
+            </li>
           </ul>
         </div>
       </div>
@@ -50,16 +58,13 @@ function App() {
         <About />
       </div>
 
-      <div>
-        <div className="Pro-header">
-          <h1>Personal Projects</h1>
-        </div>
+      <div className="Pro-header">
+        <h1 className="pp">Personal Projects</h1>
         <Projects />
       </div>
 
-      <div className="contact-container">
-        <h1>Contact</h1>
-        <p>LinkedIn</p>
+      <div>
+        <Contact />
       </div>
     </div>
   );
