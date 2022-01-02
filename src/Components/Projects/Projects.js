@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import YoutubePro from "./Images/youtube.png";
-import Hackerrank from "./Images/hacker.png";
+import YoutubePro from "../Images/youtube.png";
+import Hackerrank from "../Images/hacker.png";
 import "./Projects.scss";
 
 export default class Projects extends Component {
@@ -30,7 +30,7 @@ export default class Projects extends Component {
             liveLink="https://hackernews.saadrazzak.com/"
           />
         </div>
-        <div className="Pro-3 Pro">
+        {/* <div className="Pro-3 Pro">
           <ProjectsShow
             projectName="Xplorer"
             projectImg="Project-xplorer"
@@ -39,7 +39,7 @@ export default class Projects extends Component {
             link="https://github.com/saadk1580/Xplorer"
             liveLink="https://xplorer.saadrazzak.com/"
           />
-        </div>
+        </div> */}
       </div>
     );
   }

@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./App.scss";
-import Projects from "./Projects";
-import About from "./About";
+import Projects from "../Projects/Projects";
+import About from "../About/About";
 import ScrollIntoView from "react-scroll-into-view";
-import Contact from "./Contact";
+import Contact from "../Contact/Contact";
 
 function App() {
   const [seconds, setSeconds] = useState(0);

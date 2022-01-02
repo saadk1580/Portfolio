@@ -19,7 +19,7 @@
     align-items: center;
   }
   &-hacker {
-    background: url("./Images/hacker.png");
+    background: url("../Images/hacker.png");
     background-repeat: no-repeat;
     background-size: cover;
     border: #000000 2px solid;
@@ -29,14 +29,14 @@
     background-size: cover;
   }
   &-youtube {
-    background: url("./Images/youtube.png");
+    background: url("../Images/youtube.png");
     position: relative;
     z-index: 2;
     background-position: 0%;
     background-size: cover;
   }
   &-xplorer {
-    background: url("./Images/xplore.png");
+    background: url("../Images/xplore.png");
     border: #000000 2px solid;
     position: relative;
     background-size: cover;

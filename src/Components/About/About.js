@@ -1,12 +1,12 @@
 import React from "react";
 import "./About.scss";
-import Java from "./Images/java.png";
-import JavaScript from "./Images/js.png";
-import Rjs from "./Images/react.png";
-import Cpp from "./Images/cpp.png";
-import HTML from "./Images/html.png";
-import CSS from "./Images/css.png";
-import AWS from "./Images/aws_logo.png";
+import Java from "../Images/java.png";
+import JavaScript from "../Images/js.png";
+import Rjs from "../Images/react.png";
+import Cpp from "../Images/cpp.png";
+import HTML from "../Images/html.png";
+import CSS from "../Images/css.png";
+import AWS from "../Images/aws_logo.png";
 
 function About() {
   return (

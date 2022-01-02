@@ -1,6 +1,6 @@
 import React from "react";
-import LinkedIn from "./Images/li_img.png";
-import twitter from "./Images/twitter_logo.png";
+import LinkedIn from "../Images/li_img.png";
+import twitter from "../Images/twitter_logo.png";
 import "./Contact.scss";
 
 function Contact() {
